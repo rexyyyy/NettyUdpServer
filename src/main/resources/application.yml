@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: dev
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB       # 单个文件上传的最大上限
+      max-request-size: 10MB    # 一次请求总大小上限
+
+server:
+  # 服务器的HTTP端口，默认为8080
+  port: 8081
+  undertow:
+    accesslog:
+      enabled: false
+  servlet:
+    context-path: /
+udp:
+  bport: 4000
